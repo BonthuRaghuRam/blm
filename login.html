@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+<link rel="stylesheet" href="style1.css">
+<script src="script.js"></script>
+
+</head>
+<body>
+    <div class="form-container">
+        
+<h3 style="text-align: center;">Bank Loan Management System</h3>
+
+<div style="display: flex; justify-content: center; margin-top: 5%;">
+  <img src="../BLM/images/logo.jpg" class="side-img">
+</div>
+
+        <div class="login active"><h4>Login</h4>
+            <form> 
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+                <p>Don't have an account? <a id="showRegister">Register</a></p>
+                <p>Forgot your password? <a id="showpassword">Forgot Password</a></p>
+            </form>
+        </div>
+
+        <div class="register disabled"><h4>Register</h4>
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <input type="password" placeholder="Confirm Password" required>
+                <input type="email" placeholder="abc@gmail.com" required>
+                <input type="submit" value="Register">
+                <p>Already have an account? <a id="showLogin">Login</a></p>
+            </form>
+        </div>
+
+        <div class="password disabled"><h4>Forgot Password</h4>
+            <form>
+                <input type="email" placeholder="abc@gmail.com" required>
+                <input type="submit" value="Send OTP">
+                <p>Go back   <a id="showLoginpassword">Login</a></p>
+            </form>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,80 @@
+.form-container div.active {
+    display: block;
+}
+
+.form-container div.disabled {
+    display: none;
+}   
+
+/* General body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #008080, #87CEFA); /* Teal to light blue gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the form */
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+}
+
+/* Form sections */
+.login, .register {
+    display: none;
+}
+
+.login.active, .register.active {
+    display: block;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.side-img{
+    height: 80px;
+    width: 80px;
+}
+
+/* Submit button */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #6a0dad; /* Purple */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #5a009d;
+}
+
+/* Link styling */
+p {
+    text-align: center;
+    margin-top: 15px;
+}
+
+a {
+    color: #007BFF; /* Blue */
+    cursor: pointer;
+    text-decoration: underline;
+}
